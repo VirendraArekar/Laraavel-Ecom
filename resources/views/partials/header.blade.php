@@ -16,11 +16,12 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Shopping cart</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> User Account <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> User Management <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">User Account</a></li>
+            <li><a href="{{ route('user.signup') }}">SignUp</a></li>
+            <li><a href="{{ route('user.signin') }}">SignIn</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Logout</a></li>
+            <li><a href="{{ route('user.logout') }}">Logout</a></li>
           </ul>
         </li>
       </ul>
